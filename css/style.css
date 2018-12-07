@@ -5,14 +5,15 @@
 :root {
     --regular-font: 'Ubuntu', sans-serif;
     --heading-font: 'Clicker Script', cursive;
-    font-size: 18px;
     --main-color: #D9A7A3;
     --font-color: #484848;
 }
 
 body {
     font-family: var(--regular-font);
+    font-size: 18px;
     color: var(--font-color);
+    font-weight: 300;
 }
 
 /* NAVBAR */
@@ -129,6 +130,10 @@ body {
 .story__txt {
     flex-basis: 60%;
     margin-right: 5%;
+}
+
+.story__txt h3::after {
+    content: url(../assets/heart--small.png);
 }
 
 /* COPYRIGHT */
