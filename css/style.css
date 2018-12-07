@@ -7,10 +7,12 @@
     --heading-font: 'Clicker Script', cursive;
     font-size: 18px;
     --main-color: #D9A7A3;
+    --font-color: #484848;
 }
 
 body {
     font-family: var(--regular-font);
+    color: var(--font-color);
 }
 
 /* NAVBAR */
@@ -127,4 +129,15 @@ body {
 .story__txt {
     flex-basis: 60%;
     margin-right: 5%;
+}
+
+/* COPYRIGHT */
+
+.copyright__section {
+    position: relative;
+    background-color: var(--main-color);
+    color: #fff;
+    height: 10vh;
+    text-align: center;
+    line-height: 10vh;
 }
