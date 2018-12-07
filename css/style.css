@@ -1,0 +1,9 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --regular-font: 'Ubuntu', sans-serif;
+    --heading-font: 'Clicker Script', cursive;
+    font-size: 21px;
+}
