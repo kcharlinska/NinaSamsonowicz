@@ -66,3 +66,19 @@ body {
     background-position: center;
     background-size: cover;
 }
+
+/* MAIN-CONTENT */
+
+.main-content__section {
+    display: flex;
+    margin: 5% 0;
+}
+
+.main-content__aside {
+    flex-basis: 40%;
+}
+
+.main-content__txt {
+    flex-basis: 60%;
+    margin-right: 5%;
+}
