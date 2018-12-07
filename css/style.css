@@ -5,5 +5,46 @@
 :root {
     --regular-font: 'Ubuntu', sans-serif;
     --heading-font: 'Clicker Script', cursive;
-    font-size: 21px;
+    font-size: 18px;
+    --main-color: #D9A7A3;
+}
+
+body {
+    font-family: var(--regular-font);
+}
+
+.menu__section {
+    position: fixed;
+}
+
+.menu__container {
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+
+.menu__items {
+    flex-basis: calc(55%/2);
+    /* width: 100%; */
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+
+.menu__items li {
+    list-style: none;
+    text-transform: uppercase;
+    flex-basis: 30%;
+}
+
+.menu__items a {
+    text-decoration: none;
+}
+
+.menu__logo {
+    flex-basis: 45%;
+    font-family: var(--heading-font);
+    font-size: 3.5rem;
+    color: var(--main-color);
+    text-align: center;
 }
