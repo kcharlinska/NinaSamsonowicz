@@ -201,6 +201,18 @@ body {
     padding: 8px 18px;
 }
 
+.payment__txt--frame i {
+    font-size: 2rem;
+    transition: .3s linear;
+    /* cursor: pointer; */
+    padding: 0 5px;
+    color: var(--font-color);
+}
+
+/* .payment__txt--frame i:hover {
+    color: #fff;
+} */
+
 /* OUR STORY */
 
 .story__section {
