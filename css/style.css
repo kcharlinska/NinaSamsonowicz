@@ -287,3 +287,22 @@ body {
     text-align: center;
     line-height: 10vh;
 }
+
+/* MOVIES */
+
+.movie__section {
+    margin: 20vh 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.movie__section div {
+    margin: 3% 5%;
+}
+
+.movie__section h3 {
+    padding: 5% 0;
+    color: var(--main-color);
+    font-weight: normal;
+}
