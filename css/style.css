@@ -114,6 +114,7 @@ body {
     border-style: none;
     font-size: 3rem;
     color: var(--main-color);
+    background-color: #fff;
     cursor: pointer;
 }
 
