@@ -80,7 +80,7 @@ body {
     height: 15vh;
 }
 
-.arrow__section button {
+.arrow__section .arrow {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -99,7 +99,7 @@ body {
     z-index: -1;
 }
 
-button i {
+.arrow i {
     transform: translateY(15px);
     /* animation: move 1.5s linear infinite; */
     text-shadow: 0 -20px var(--main-color);
