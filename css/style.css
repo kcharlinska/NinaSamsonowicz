@@ -158,6 +158,23 @@ body {
     background-color: var(--main-color);
     text-align: center;
     padding: 5% 15%;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.payment__section p {
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.payment__txt--key {
+    color: #fff;
+}
+
+.payment__txt--frame {
+    text-transform: uppercase;
+    border: 2px dotted #fff;
+    padding: 8px 18px;
 }
 
 /* OUR STORY */
