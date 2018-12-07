@@ -82,3 +82,9 @@ body {
     flex-basis: 60%;
     margin-right: 5%;
 }
+
+.payment__section {
+    background-color: var(--main-color);
+    text-align: center;
+    padding: 5% 15%;
+}
