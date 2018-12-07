@@ -1,12 +1,18 @@
+$('#about-Nina').on('click', function () {
+    $('body, html').animate({
+        scrollTop: $('.main-content__section').position().top
+    }, 800)
+})
+
 $('#our-story').on('click', function () {
     $('body, html').animate({
-        scrollTop: $('.story__section').offset().top
+        scrollTop: $('.story__section').position().top
     }, 800)
 })
 
 $('#payment').on('click', function () {
     $('body, html').animate({
-        scrollTop: $('.payment__section').offset().top
+        scrollTop: $('.payment__section').position().top
     }, 800)
 })
 

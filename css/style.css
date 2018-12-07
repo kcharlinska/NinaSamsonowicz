@@ -137,6 +137,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-top: 15vh;
 }
 
 .main-content__aside {
@@ -188,6 +189,10 @@ body {
 
 .payment__txt--key {
     color: #fff;
+}
+
+.payment__section span {
+    text-decoration: underline;
 }
 
 .payment__txt--frame {
