@@ -18,8 +18,8 @@
     <section class="menu__section">
         <nav class="menu__container">
             <ul class="menu__items">
-                <li><a href="#">Nasza historia</a></li>
-                <li><a href="#">Jak można pomóc</a></li>
+                <li><a id='our-story' href="#">Nasza historia</a></li>
+                <li><a id='payment' href="#">Jak można pomóc</a></li>
             </ul>
             <h2 class="menu__logo">Nina Samsonowicz</h2>
             <ul class="menu__items">
@@ -32,10 +32,10 @@
     <section class="hero__section">
     </section>
     <section class="arrow__section">
-        <button class="arrow"><i class="fas fa-angle-down"></i>
+        <button id="arrow-btn" class="arrow"><i class="fas fa-angle-down"></i>
         </button>
     </section>
-    <section class="main-content__section">
+    <section data-section='arrow-btn' class="main-content__section">
         <div class="main-content__aside">
             <img src="assets/heart--big.png" alt="">
         </div>
@@ -61,7 +61,7 @@
                 darowiznę na rzecz Niny poprzez jej oficjalne konto w Fundacji Serce Dziecka.</p>
         </div>
     </section>
-    <section class="payment__section">
+    <section data-section="payment" class="payment__section">
         <p>Fundacja Serce Dziecka im. Diny Radziwiłłowej ul. Narbutta 27 lok.1, 02-536 Warszawa</p>
         <p>Nr konta na wpłaty złotowe:<br> PL 17 1160 2202 0000 0000 8297 2843</p>
         <p>Nr konta na wpłaty w Euro:<br> PL 09 1160 2202 0000 0001 2152 1272<br> SWIFT BIGBPLPW</p>
@@ -72,7 +72,7 @@
         <p>Pamiętajcie, że dokonując wpłaty na konto Niny w Fundacji, macie pewność, że wszystkie środki zostaną
             przeznaczone jedynie na rzecz zweryfikowanych kosztów medycznych.</p>
     </section>
-    <section class="story__section">
+    <section data-section="our-story" class="story__section">
         <div class="story__aside">
             <div class="aside__img"><img src="assets/img/IMG_0087.jpeg" alt=""></div>
             <div class="aside__img"><img src="assets/img/IMG_1296.jpeg" alt=""></div>
@@ -195,6 +195,8 @@
         </div>
     </section>
     <footer class="copyright__section">&copy 2018 Friends4Nina</footer>
+    <script src="lib/jquery-3.3.1.min.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>
