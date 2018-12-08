@@ -82,9 +82,18 @@ body {
     flex-basis: 42%;
     font-family: var(--heading-font);
     font-size: 3.5rem;
+    font-weight: 700;
     color: var(--main-color);
     text-align: center;
     line-height: 3.5rem;
+}
+
+.menu__burger .fa-bars,
+.fa-angle-up {
+    display: none;
+    color: var(--main-color);
+    font-size: 2rem;
+    /* margin: 8% 8%; */
 }
 
 /* HERO */
@@ -308,4 +317,58 @@ body {
     padding: 5% 0;
     color: var(--main-color);
     font-weight: normal;
+}
+
+@media (max-width: 900px) {
+    .menu__container {
+        flex-direction: column;
+    }
+
+    .menu__logo {
+        position: relative;
+        order: -1;
+        font-size: 2.8rem;
+        margin: 5%;
+        flex-basis: 20%;
+        text-align: left;
+        width: 100%;
+        padding-left: 5%;
+    }
+
+    .menu__burger .fa-bars {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 5%;
+        transform: translate(-50%, -50%);
+    }
+
+    .menu__items {
+        display: block;
+        background-color: var(--main-color);
+        width: 100%;
+    }
+
+    .menu__items li {
+        text-align: center;
+        padding: 20px 0;
+        /* height: 50%; */
+        border-bottom: 1px solid #fff;
+    }
+
+    .menu__items li::after {
+        display: none;
+    }
+
+    .hero__section {
+        /* display: none; */
+    }
+
+    .story__gallery {
+        /* display: none; */
+    }
+
+    .main-content__aside {
+        /* display: none; */
+    }
 }
