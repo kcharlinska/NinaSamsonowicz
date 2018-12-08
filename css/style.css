@@ -88,9 +88,12 @@ body {
     line-height: 3.5rem;
 }
 
-.menu__burger .fa-bars,
-.fa-angle-up {
+.menu__burger i {
     display: none;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(-50%, -50%);
     color: var(--main-color);
     font-size: 2rem;
     /* margin: 8% 8%; */
@@ -335,18 +338,22 @@ body {
         padding-left: 5%;
     }
 
-    .menu__burger .fa-bars {
+    .menu__burger i {
+        display: none;
+    }
+
+    .menu__burger i.show {
         display: block;
-        position: absolute;
-        top: 50%;
-        right: 5%;
-        transform: translate(-50%, -50%);
     }
 
     .menu__items {
-        display: block;
+        display: none;
         background-color: var(--main-color);
         width: 100%;
+    }
+
+    .menu__items.show {
+        display: block;
     }
 
     .menu__items li {

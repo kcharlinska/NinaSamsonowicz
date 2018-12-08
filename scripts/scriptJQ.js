@@ -30,3 +30,7 @@ $('.menu__section a').on('click', function () {
 //         scrollTop: $($.attr(this, 'href')).offset().top
 //     }, 800);
 // });
+
+$(".menu__burger").on("click", function () {
+    $(".active").toggleClass("show");
+})
