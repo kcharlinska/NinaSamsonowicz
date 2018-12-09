@@ -58,7 +58,7 @@ body {
     -ms-flex-pack: distribute;
     justify-content: space-around;
     font-size: .8rem;
-    align-content: stretch;
+    /* align-content: stretch; */
 }
 
 .menu__items li {
@@ -84,6 +84,7 @@ body {
 .menu__section a {
     text-decoration: none;
     color: inherit;
+    /* width: 100%; */
 }
 
 .menu__logo {

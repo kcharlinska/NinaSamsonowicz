@@ -1,22 +1,29 @@
-$('.menu__section a, .arrow').on('click', function () {
+$('.menu__section a, .arrow').not('#about_hlhs--link').on('click', function () {
     const goToSection = "[data-section=" + $(this).attr('id') + "]";
-    console.log($(goToSection).offset().top);
-    console.log($('.menu__logo').outerHeight(true));
+    // console.log($(goToSection).offset().top);
+    // console.log($('.menu__logo').outerHeight(true));
     $('body, html').animate({
         scrollTop: $(goToSection).offset().top - $('.menu__logo').outerHeight(true)
     }, 800)
-    $(".active").toggleClass("show")
+    toggleShowClass()
+})
 
+$('#about_hlhs--link').on('click', function () {
+    toggleShowClass()
 })
 
 $(".menu__burger").on("click", function () {
-    $(".active").toggleClass("show");
+    toggleShowClass()
 })
 
 if ($(".menu__burger .fa-angle-up").hasClass("show")) {
     $(window).one('scroll', function () {
-        $(".active").toggleClass("show")
+        toggleShowClass()
     })
+}
+
+function toggleShowClass() {
+    $(".active").toggleClass("show")
 }
 
 // $(window).one('scroll', function () {
