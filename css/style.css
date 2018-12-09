@@ -424,7 +424,16 @@ body {
         text-align: center;
     }
 
+    .story__txt {
+        flex-basis: 100%;
+        margin: 0 5%;
+    }
+
+    .story__txt h3::after {
+        display: none;
+    }
+
     .story__gallery {
-        /* display: none; */
+        display: none;
     }
 }
