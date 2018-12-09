@@ -33,4 +33,7 @@ $('.menu__section a').on('click', function () {
 
 $(".menu__burger").on("click", function () {
     $(".active").toggleClass("show");
+    $(window).one('scroll', function () {
+        $(".active").toggleClass("show");
+    });
 })
