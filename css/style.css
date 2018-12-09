@@ -50,11 +50,13 @@ body {
     -ms-flex-pack: distribute;
     justify-content: space-around;
     font-size: .8rem;
+    align-content: stretch;
 }
 
 .menu__items li {
     list-style: none;
     text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
 
 .menu__items li::after {
@@ -71,10 +73,9 @@ body {
     width: 100%;
 }
 
-.menu__items a {
+.menu__section a {
     text-decoration: none;
     color: inherit;
-    letter-spacing: 1.5px;
 }
 
 .menu__logo {
@@ -85,8 +86,15 @@ body {
     font-weight: 700;
     color: var(--main-color);
     text-align: center;
-    line-height: 3.5rem;
+    line-height: 15vh;
+    /* min-height: 100%; */
+    min-height: 15vh;
 }
+
+/* .menu__logo a {
+    text-decoration: none;
+    color: inherit;
+} */
 
 .menu__burger i {
     display: none;
@@ -151,7 +159,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 15vh;
+    padding: 5% 0;
 }
 
 .main-content__aside {
@@ -190,10 +198,10 @@ body {
 .payment__section {
     background-color: var(--main-color);
     text-align: center;
-    padding: 5% 15%;
+    padding: 4% 15%;
     font-weight: 700;
     font-style: italic;
-    margin-top: 15vh;
+    /* margin-top: 15vh; */
 }
 
 .payment__section p {
@@ -225,7 +233,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 15vh;
+    padding: 5% 0;
 }
 
 .story__gallery {
@@ -266,6 +274,10 @@ body {
 
 .story__txt img {
     display: none;
+}
+
+.story__txt img:last-of-type {
+    display: block;
 }
 
 .story__txt {
@@ -387,6 +399,10 @@ body {
         display: none;
     }
 
+    .hero__section {
+        margin-bottom: 15%;
+    }
+
     .hero__section.show {
         margin-top: 50vh;
     }
@@ -426,7 +442,7 @@ body {
     .main-content__txt {
         -ms-flex-preferred-size: 60%;
         flex-basis: 100%;
-        margin: 0 5%;
+        margin: 10% 5%;
     }
 
     .payment__section {
@@ -495,7 +511,8 @@ body {
     .story__txt h3 {}
 
     .story__txt p,
-    .story__txt h3 {
+    .story__txt h3,
+    .story__txt img:last-of-type {
         padding: 0 5%;
     }
 
