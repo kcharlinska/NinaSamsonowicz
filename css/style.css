@@ -93,6 +93,7 @@ body {
     position: absolute;
     top: 50%;
     right: 5%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     color: var(--main-color);
     font-size: 2rem;
@@ -237,7 +238,10 @@ body {
     flex-direction: column;
     -ms-flex-preferred-size: 40%;
     flex-basis: 40%;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 10% 0;
 }
@@ -308,8 +312,12 @@ body {
 
 .movie__section {
     margin: 20vh 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
 }
 
@@ -325,14 +333,20 @@ body {
 
 @media (max-width: 900px) {
     .menu__container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
     .menu__logo {
         position: relative;
+        -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
         order: -1;
         font-size: 2.8rem;
         margin: 5%;
+        -ms-flex-preferred-size: 20%;
         flex-basis: 20%;
         text-align: left;
         width: 100%;
@@ -374,12 +388,19 @@ body {
 
     .hero__section::after {
         content: url('../assets/heart--small.png');
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         position: absolute;
         bottom: 0;
         left: 50%;
+        -webkit-transform: translate(-50%, 50%);
         transform: translate(-50%, 50%);
         border-radius: 50%;
         background-color: #fff;
@@ -410,12 +431,19 @@ body {
 
     .payment__section::after {
         content: url('../assets/heart--small.png');
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         position: absolute;
         bottom: 0;
         left: 50%;
+        -webkit-transform: translate(-50%, 50%);
         transform: translate(-50%, 50%);
         border-radius: 50%;
         background-color: #fff;
@@ -425,6 +453,7 @@ body {
     }
 
     .story__txt {
+        -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
         margin: 0 5%;
     }
