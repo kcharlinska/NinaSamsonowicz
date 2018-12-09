@@ -392,11 +392,17 @@ body {
         display: none;
     }
 
-    .story__gallery {
-        /* display: none; */
+    .main-content__aside {
+        display: none;
     }
 
-    .main-content__aside {
+    .main-content__txt {
+        -ms-flex-preferred-size: 60%;
+        flex-basis: 100%;
+        margin: 0 5%;
+    }
+
+    .story__gallery {
         /* display: none; */
     }
 }
