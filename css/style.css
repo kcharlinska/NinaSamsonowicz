@@ -223,7 +223,7 @@ body {
 }
 
 .payment__txt--key {
-    color: #fff;
+    color: #912F46;
 }
 
 .payment__section span {
@@ -237,7 +237,7 @@ body {
 }
 
 .payment__txt--frame a {
-    color: #fff;
+    color: #912F46;
 }
 
 /* OUR STORY */
@@ -406,6 +406,7 @@ body {
         padding: 20px 0;
         /* height: 50%; */
         border-bottom: 1px solid #fff;
+        -webkit-transition: .3s linear;
         transition: .3s linear;
     }
 
