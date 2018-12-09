@@ -2,7 +2,7 @@ $(".menu__burger").on("click", function () {
     toggleShowClass()
 })
 
-$('#about_hlhs--link').on('click', function () {
+$('#about_hlhs--link, #lang_ver--link').on('click', function () {
     toggleShowClass();
 })
 
