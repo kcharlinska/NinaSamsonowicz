@@ -83,10 +83,39 @@ body {
 }
 
 .menu__section a {
+    display: block;
     text-decoration: none;
     color: inherit;
+    padding: 5%;
     /* width: 100%; */
 }
+
+.menu__lang-menu {
+    position: relative;
+}
+
+.menu__lang-menu ul {
+    display: none;
+    background-color: #fff;
+}
+
+.menu__lang-menu li {
+    padding: 5% 0;
+}
+
+.menu__lang-menu:hover ul {
+    display: block;
+    position: absolute;
+    bottom: -300%;
+    left: 0;
+}
+
+/* .menu__lang-menu:hover .menu__lang-menu:first-child {
+    display: block;
+    position: absolute;
+    bottom: -200%;
+    left: 0;
+} */
 
 .menu__logo {
     -ms-flex-preferred-size: 42%;
