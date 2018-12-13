@@ -68,7 +68,8 @@ body {
     letter-spacing: 1.5px;
 }
 
-.menu__items li::after {
+
+.menu__items>li:not(.menu__lang-menu)::after {
     content: '';
     display: block;
     width: 0;
@@ -78,44 +79,53 @@ body {
     transition: width .3s;
 }
 
-.menu__items li:hover::after {
+.menu__items>li:hover::after {
     width: 100%;
 }
+
 
 .menu__section a {
     display: block;
     text-decoration: none;
     color: inherit;
-    padding: 5%;
-    /* width: 100%; */
 }
 
 .menu__lang-menu {
     position: relative;
 }
 
-.menu__lang-menu ul {
-    display: none;
+.lang__select--desk {
+    /* display: none; */
+    position: absolute;
+    bottom: -600%;
+    left: -40%;
+    right: -20%;
     background-color: #fff;
+    /* width: 140%; */
+    text-align: center;
+    border: 1px solid black;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+    transition: 0s all;
+    transition-delay: .5s;
 }
 
-.menu__lang-menu li {
-    padding: 5% 0;
+.lang__select--desk a {
+    padding: 10% 20%;
 }
 
-.menu__lang-menu:hover ul {
-    display: block;
-    position: absolute;
-    bottom: -300%;
-    left: 0;
+.menu__lang-menu:hover .lang__select--desk {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
 }
 
-/* .menu__lang-menu:hover .menu__lang-menu:first-child {
-    display: block;
-    position: absolute;
-    bottom: -200%;
-    left: 0;
-} */
+.lang__select--mobi {
+    display: none;
+    margin: 18px auto;
+    text-transform: uppercase;
+}
 
 .menu__logo {
     -ms-flex-preferred-size: 42%;
@@ -413,6 +423,14 @@ body {
         padding-left: 5%;
     }
 
+    .lang__select--desk {
+        display: none;
+    }
+
+    .lang__select--mobi {
+        display: block;
+    }
+
     .menu__burger i {
         display: none;
     }
@@ -433,18 +451,31 @@ body {
 
     .menu__items li {
         text-align: center;
-        padding: 20px 0;
+        /* padding: 20px 0; */
         /* height: 50%; */
         border-bottom: 1px solid #fff;
         -webkit-transition: .3s linear;
         transition: .3s linear;
     }
 
-    .menu__items li:hover {
+    .menu__items a {
+        /* height: 100%; */
+        padding: 20px 0;
+    }
+
+    .menu__items li:not(.menu__lang-menu):hover {
         background-color: #a7a7a7;
     }
 
-    .menu__items li::after {
+    .menu__items>li:not(.menu__lang-menu)::after {
+        display: none;
+    }
+
+    /* .menu__lang-menu {
+        height: 100%;
+    } */
+
+    .menu__lang-menu>a {
         display: none;
     }
 
@@ -543,6 +574,10 @@ body {
 
     .story__gallery {
         display: none;
+    }
+
+    .story__txt img:last-of-type {
+        margin: 0;
     }
 }
 

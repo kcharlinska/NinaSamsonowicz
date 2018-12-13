@@ -12,6 +12,16 @@ $('#about_hlhs--link, #lang_ver--link').on('click', function () {
     toggleShowClass()
 })
 
+// $(".menu__lang-menu a").one("mouseover", function () {
+//     $(".lang__select--desk").addClass('permahover');
+// });
+
+// $(".menu__container").mouseleave(function () {
+//     $(".lang__select--desk").remove('permahover');
+// });
+
+
+
 $(".menu__burger").on("click", function () {
     toggleShowClass()
 })
