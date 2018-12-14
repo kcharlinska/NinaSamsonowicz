@@ -31,9 +31,25 @@
                 </div>
             </div>
             <ul class="menu__items active">
-                <li><a id='our_story-link' href="index.html#our_story">Nasza historia</a></li>
+                <li><a id='our_story--link' href="index.html#our_story">Nasza historia</a></li>
                 <li><a id='about_hlhs--link' href="#">O HLHS</a></li>
-                <li><a id='lang_ver--link' href="en-about_hlhs.html">english</a></li>
+                <li class="menu__lang-menu">
+                    <a id='lang_ver--link' href="en.html">english<i class="fas fa-caret-down"></i></a>
+                    <ul class="lang__select--desk">
+                        <li>
+                            <a id='lang_ver--link' href="de.html">deutsch</a>
+                        </li>
+                        <li>
+                            <a id='lang_ver--link' href="it.html">italiano</a>
+                        </li>
+                    </ul>
+                    <select class="lang__select--mobi">
+                        <option value="">---Select Language---</option>
+                        <option id='lang_ver--link' value="en.html">english</option>
+                        <option id='lang_ver--link' value="de.html">deutsch</option>
+                        <option id='lang_ver--link' value="it.html">italiano</option>
+                    </select>
+                </li>
             </ul>
         </nav>
     </section>

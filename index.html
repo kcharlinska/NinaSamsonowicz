@@ -41,11 +41,11 @@
                             <a id='lang_ver--link' href="it.html">italiano</a>
                         </li>
                     </ul>
-                    <select class="lang__select--mobi">
+                    <select class="lang__select--mobi" onchange="location = this.value;">
                         <option value="">---Select Language---</option>
-                        <option id='lang_ver--link' href="en.html" value="en">english</option>
-                        <option id='lang_ver--link' href="de.html" value="de">deutsch</option>
-                        <option id='lang_ver--link' href="it.html" value="it">italian</option>
+                        <option id='lang_ver--link' value="en.html">english</option>
+                        <option id='lang_ver--link' value="de.html">deutsch</option>
+                        <option id='lang_ver--link' value="it.html">italiano</option>
                     </select>
                 </li>
             </ul>
@@ -231,7 +231,6 @@
     <footer class="copyright__section">&copy 2018 Friends4Nina</footer>
     <script src="lib/jquery-3.3.1.min.js"></script>
     <script src="scripts/scriptJQ-main.js"></script>
-    <script src="scripts/scriptJS.js"></script>
 </body>
 
 </html>
