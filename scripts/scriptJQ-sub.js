@@ -13,5 +13,14 @@ if ($(".menu__burger .fa-angle-up").hasClass("show")) {
 }
 
 function toggleShowClass() {
-    $(".active").toggleClass("show")
+    $(".switch").toggleClass("show")
 }
+// The Double Tap Issue on iOS Devices
+
+$(document).ready(function () {
+    $("a").on("click touchend", function () {
+        var el = $(this);
+        var link = el.attr("href");
+        window.location = link;
+    });
+});
