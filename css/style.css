@@ -265,7 +265,7 @@ body {
     line-height: 1.5;
 }
 
-.main-content__txt span {
+.main-content__txt strong {
     font-weight: 700;
     font-style: italic;
 }
@@ -290,7 +290,7 @@ body {
     color: #912F46;
 }
 
-.payment__section span {
+.payment__section strong {
     text-decoration: underline;
 }
 
@@ -381,7 +381,7 @@ body {
     line-height: 1.5;
 }
 
-.story__txt span {
+.story__txt strong {
     font-weight: 700;
     font-style: italic;
 }
