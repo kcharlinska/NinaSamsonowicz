@@ -2,3 +2,8 @@ RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d 
 RewriteCond %{REQUEST_FILENAME}\.html -f 
 RewriteRule ^(.*)$ $1.html
+RewriteRule ^index\.html$ / [R=301,L]
+RewriteCond %{HTTP_HOST} ^www.ninasamsonowicz.pl$ [NC]
+RewriteRule ^(.*)$ http://ninasamsonowicz.pl/$1 [R=301,L]
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
