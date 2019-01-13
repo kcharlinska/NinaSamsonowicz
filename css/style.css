@@ -200,7 +200,7 @@ body {
     height: 15vh;
 }
 
-.arrow__section .arrow {
+.arrow__section .about_Nina--link {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -213,7 +213,7 @@ body {
     cursor: pointer;
 }
 
-.arrow i {
+.about_Nina--link i {
     -webkit-transform: translateY(15px);
     transform: translateY(15px);
     text-shadow: 0 -20px var(--main-color);
@@ -223,7 +223,7 @@ body {
     transform: scale(1)
 }
 
-.arrow:hover i {
+.about_Nina--link:hover i {
     color: #808080;
     text-shadow: 0 -20px #808080;
     -webkit-transform: scale(.9);
@@ -488,6 +488,12 @@ body {
     .menu__items a {
         width: 100%;
         padding: 20px 0;
+    }
+
+    .menu__items a.active {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        color: var(--font-color);
     }
 
     .menu__items li:not(.menu__lang-menu):hover {

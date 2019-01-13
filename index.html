@@ -19,6 +19,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
 
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -28,9 +32,8 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Facebook Open Graph -->
+    <meta property="og:image" content="https://ninasamsonowicz.pl/assets/img/Nina-Samsonowicz-01.jpg">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131185717-1"></script>
@@ -51,19 +54,19 @@
     <section class="menu__section">
         <nav class="menu__container">
             <ul class="menu__items switch">
-                <li><a id='about_Nina--link' href="#">O Ninie</a></li>
-                <li><a id='payment--link' href="#">Jak można pomóc</a></li>
+                <li><a class='about_Nina--link' href="#">O Ninie</a></li>
+                <li><a class='payment--link' href="#">Jak można pomóc</a></li>
             </ul>
             <div class="menu__logo">
-                <a id='homepage--link' href="#">Nina Samsonowicz</a>
+                <a class='homepage--link' href="#">Nina Samsonowicz</a>
                 <div class="menu__burger">
                     <i class="fas fa-bars switch show"></i>
                     <i class="fas fa-angle-up switch"></i>
                 </div>
             </div>
             <ul class="menu__items switch">
-                <li><a id='our_story--link' href="#">Nasza historia</a></li>
-                <li><a id='about_hlhs--link' href="about_hlhs.html">O HLHS</a></li>
+                <li><a class='our_story--link' href="#">Nasza historia</a></li>
+                <li><a class='about_hlhs--link' href="about_hlhs.html">O HLHS</a></li>
                 <li class="menu__lang-menu">
                     <a class='lang_ver--link' href="en.html">english<i class="fas fa-angle-down"></i></a>
                     <ul class="lang__select--desk">
@@ -74,11 +77,11 @@
                             <a class='lang_ver--link' href="it.html">italiano</a>
                         </li>
                     </ul>
-                    <select class="lang__select--mobi" onchange="location = this.value;">
+                    <select class="lang__select--mobi">
                         <option value="">---Select Language---</option>
-                        <option class='lang_ver--link' value="en">english</option>
-                        <option class='lang_ver--link' value="de">deutsch</option>
-                        <option class='lang_ver--link' value="it">italiano</option>
+                        <option class='lang_ver--link' value="en.html">english</option>
+                        <option class='lang_ver--link' value="de.html">deutsch</option>
+                        <option class='lang_ver--link' value="it.html">italiano</option>
                     </select>
                 </li>
             </ul>
@@ -87,7 +90,7 @@
     <section data-section='homepage--link' class="hero__section">
     </section>
     <section class="arrow__section">
-        <button id='about_Nina--link' class="arrow"><i class="fas fa-angle-down"></i>
+        <button class='about_Nina--link'><i class="fas fa-angle-down"></i>
         </button>
     </section>
     <section data-section='about_Nina--link' id='about_Nina' class="main-content__section">
