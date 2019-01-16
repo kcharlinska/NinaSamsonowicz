@@ -1,5 +1,5 @@
 // Smooth scroll to section after nav click
-$('.menu__section a, .arrow__section .about_Nina--link').not('.about_hlhs--link').on('click', function () {
+$('.page__header a, .arrow__section .about_Nina--link').not('.about_hlhs--link').on('click', function () {
     const goToSection = "[data-section=" + $(this).attr('class') + "]";
     $('body, html').animate({
         scrollTop: $(goToSection).offset().top - $('.menu__logo').outerHeight(true)
@@ -10,7 +10,7 @@ $('.menu__section a, .arrow__section .about_Nina--link').not('.about_hlhs--link'
 //  Change Nav Item after scroll to section
 const changeMenu = () => {
     const sectionList = document.querySelectorAll('section[data-section]:not([data-section="homepage--link"])');
-    const navHeight = document.querySelector('.menu__section').offsetHeight;
+    const navHeight = document.querySelector('.page__header').offsetHeight;
     const scrollPosition = window.scrollY + navHeight;
     sectionList.forEach(item => {
         const navItem = document.querySelector(`.${item.dataset.section}`);
