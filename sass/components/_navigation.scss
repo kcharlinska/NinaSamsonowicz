@@ -84,14 +84,14 @@
 
         a {
 
-            @include md-media {
-                width: 100%;
-                padding: 20px 0;
-            }
-
             &.active {
                 transform: scale(.9);
                 color: $brand-color;
+
+                @include md-media {
+                    transform: scale(1);
+                    color: $text-color-gray;
+                }
             }
 
             &:hover {
@@ -103,6 +103,12 @@
                     color: $text-color-gray;
                 }
             }
+
+            @include md-media {
+                width: 100%;
+                padding: 20px 0;
+            }
+
         }
     }
 

@@ -1,6 +1,6 @@
 // MOVIES
 
-.movie__section {
+.movie {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -10,7 +10,7 @@
         margin: 15vh 0;
     }
 
-    .movie__item {
+    &__item {
         margin: 20px;
 
         @include sm-media {

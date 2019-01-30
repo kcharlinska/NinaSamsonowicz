@@ -1,24 +1,26 @@
 // Smooth scroll to section after nav click
-$('.page__header a, .arrow__section .about_Nina--link').not('.about_hlhs--link').on('click', function () {
-    const goToSection = "[data-section=" + $(this).attr('class') + "]";
+$('.page__header a, .arrow a').not('.about_hlhs--link').on('click', function () {
+    const goToSection = $(this).attr("href");
     $('body, html').animate({
         scrollTop: $(goToSection).offset().top - $('.menu__logo').outerHeight(true)
     }, 800)
     toggleShowClass()
 })
 
+
 //  Change Nav Item after scroll to section
 const changeMenu = () => {
-    const sectionList = document.querySelectorAll('section[data-section]:not([data-section="homepage--link"])');
+    const sectionList = document.querySelectorAll('section[id]');
     const navHeight = document.querySelector('.page__header').offsetHeight;
     const scrollPosition = window.scrollY + navHeight;
     sectionList.forEach(item => {
-        const navItem = document.querySelector(`.${item.dataset.section}`);
+        const navItem = document.querySelector(`.${item.id}--link`);
         if (scrollPosition >= item.offsetTop && scrollPosition < item.offsetTop + item.offsetHeight) navItem.classList.add('active');
         else navItem.classList.remove('active');
     })
 }
 window.addEventListener('scroll', changeMenu)
+
 
 //  Show/hide menu on mobile
 $(".menu__burger").on("click", function () {

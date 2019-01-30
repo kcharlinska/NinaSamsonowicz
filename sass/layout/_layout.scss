@@ -19,7 +19,7 @@
 
     @include md-media {
         & {
-            margin-bottom: 15%;
+            margin-bottom: 10%;
 
             &.show {
                 margin-top: 50vh;
@@ -32,6 +32,12 @@
                 @include translate(-50%, 50%);
                 @include circle;
             }
+        }
+    }
+
+    @include sm-media {
+        & {
+            margin-bottom: 20%;
         }
     }
 }
@@ -89,6 +95,8 @@
 
     @include md-media {
         position: relative;
+        padding-bottom: 16%;
+        margin-bottom: 12%;
 
         &::after {
             content: url('../assets/heart-small.png');
@@ -97,6 +105,11 @@
             @include translate(-50%, 50%);
             @include circle;
         }
+    }
+
+    @include sm-media {
+        padding-bottom: 28%;
+        margin-bottom: 22%;
     }
 
     &__txt--key {
@@ -188,7 +201,7 @@
 
 // FOOTER
 
-.copyright__section {
+.copyright {
     height: 10vh;
     text-align: center;
     line-height: 10vh;

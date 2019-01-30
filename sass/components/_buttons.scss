@@ -1,14 +1,11 @@
-button {
-    color: $brand-color;
-    border: none;
-    cursor: pointer;
-}
-
-// Hamburger button
+// Hamburger
 
 .menu__burger {
     display: none;
     font-size: 2rem;
+    color: $brand-color;
+    border: none;
+    cursor: pointer;
 
     @include md-media {
         @include flexCenter;
@@ -24,13 +21,13 @@ button {
     }
 }
 
-// Arrow button
+// Arrow
 
 .arrow .about_Nina--link {
     @include position(absolute, $top: 50%, $left: 50%);
     @include translate(-50%, -50%);
+    color: $brand-color;
     font-size: 3rem;
-    background-color: $white-color;
 
     i {
         @include transYscale(0, 1);

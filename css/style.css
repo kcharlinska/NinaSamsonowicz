@@ -381,6 +381,10 @@ h3 {
   margin-bottom: 50px;
 }
 
+p {
+  margin: 25px 0;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -394,6 +398,10 @@ a {
 .txt--strong {
   font-weight: 700;
   font-style: italic;
+}
+
+.txt--strong p {
+  margin: 10px 0;
 }
 
 .txt--strong strong {
@@ -420,7 +428,7 @@ a {
 
 @media (max-width: 1024px) {
   .hero {
-    margin-bottom: 15%;
+    margin-bottom: 10%;
   }
   .hero.show {
     margin-top: 50vh;
@@ -446,6 +454,12 @@ a {
     height: 180px;
     text-align: center;
     background-color: #fff;
+  }
+}
+
+@media (max-width: 599px) {
+  .hero {
+    margin-bottom: 20%;
   }
 }
 
@@ -511,6 +525,8 @@ a {
 @media (max-width: 1024px) {
   .payment {
     position: relative;
+    padding-bottom: 16%;
+    margin-bottom: 12%;
   }
   .payment::after {
     content: url("../assets/heart-small.png");
@@ -533,6 +549,13 @@ a {
     height: 180px;
     text-align: center;
     background-color: #fff;
+  }
+}
+
+@media (max-width: 599px) {
+  .payment {
+    padding-bottom: 28%;
+    margin-bottom: 22%;
   }
 }
 
@@ -646,7 +669,7 @@ a {
   }
 }
 
-.copyright__section {
+.copyright {
   height: 10vh;
   text-align: center;
   line-height: 10vh;
@@ -654,15 +677,12 @@ a {
   color: #fff;
 }
 
-button {
-  color: #D9A7A3;
-  border: none;
-  cursor: pointer;
-}
-
 .menu__burger {
   display: none;
   font-size: 2rem;
+  color: #D9A7A3;
+  border: none;
+  cursor: pointer;
 }
 
 @media (max-width: 1024px) {
@@ -692,8 +712,8 @@ button {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  color: #D9A7A3;
   font-size: 3rem;
-  background-color: #fff;
 }
 
 .arrow .about_Nina--link i {
@@ -827,17 +847,18 @@ button {
   }
 }
 
-@media (max-width: 1024px) {
-  .menu__items li a {
-    width: 100%;
-    padding: 20px 0;
-  }
-}
-
 .menu__items li a.active {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
   color: #D9A7A3;
+}
+
+@media (max-width: 1024px) {
+  .menu__items li a.active {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    color: #484848;
+  }
 }
 
 .menu__items li a:hover {
@@ -851,6 +872,13 @@ button {
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
     color: #484848;
+  }
+}
+
+@media (max-width: 1024px) {
+  .menu__items li a {
+    width: 100%;
+    padding: 20px 0;
   }
 }
 
@@ -944,7 +972,7 @@ button {
   }
 }
 
-.movie__section {
+.movie {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -956,23 +984,23 @@ button {
 }
 
 @media (max-width: 599px) {
-  .movie__section {
+  .movie {
     margin: 15vh 0;
   }
 }
 
-.movie__section .movie__item {
+.movie__item {
   margin: 20px;
 }
 
 @media (max-width: 599px) {
-  .movie__section .movie__item {
+  .movie__item {
     width: 100%;
   }
 }
 
 @media (max-width: 599px) {
-  .movie__section .movie__item iframe {
+  .movie__item iframe {
     width: 100%;
     height: 100%;
     margin: 0 auto;

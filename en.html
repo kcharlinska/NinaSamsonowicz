@@ -28,18 +28,18 @@
     <header class="page__header">
         <nav class="menu">
             <ul class="menu__items switch">
-                <li><a class='about_Nina--link' href="#">About Nina</a></li>
-                <li><a class='payment--link' href="#">How can I help</a></li>
+                <li><a class='about_Nina--link' href="#about_Nina">About Nina</a></li>
+                <li><a class='payment--link' href="#payment">How can I help</a></li>
             </ul>
             <div class="menu__logo">
-                <a class='homepage--link' href="#">Nina Samsonowicz</a>
-                <div class="menu__burger">
+                <a class='to_top--link' href="#to_top">Nina Samsonowicz</a>
+                <button class="menu__burger">
                     <i class="fas fa-bars switch show"></i>
                     <i class="fas fa-angle-up switch"></i>
-                </div>
+                </button>
             </div>
             <ul class="menu__items switch">
-                <li><a class='our_story--link' href="#">Our story</a></li>
+                <li><a class='our_story--link' href="#our_story">Our story</a></li>
                 <li><a class='about_hlhs--link' href="en-about_hlhs.html">About HLHS</a></li>
                 <li class="menu__lang-menu">
                     <a class='lang_ver--link' href="index.html">polski<i class="fas fa-angle-down"></i></a>
@@ -61,33 +61,37 @@
             </ul>
         </nav>
     </header>
-    <section data-section='homepage--link' class="hero__section">
+    <section id='to_top' class="hero">
     </section>
-    <section class="arrow__section">
-        <button class='about_Nina--link'><i class="fas fa-angle-down"></i>
-        </button>
+    <section class="arrow">
+        <a class='about_Nina--link' href='#about_Nina'><i class="fas fa-angle-down"></i>
+        </a>
     </section>
-    <section data-section='about_Nina--link' id='about_Nina' class="main-content__section">
+    <section id='about_Nina' class="main-content">
         <div class="main-content__aside">
             <img src="assets/heart-big.png" alt="">
         </div>
         <div class="main-content__txt">
-            <p>Our daughter, <strong>Nina Samsonowicz</strong>, was born on July 12, 2016 in Cracow with one of the
+            <p>Our daughter, <strong class="txt--strong">Nina Samsonowicz</strong>, was born on July 12, 2016 in Cracow
+                with one of the
                 most
-                severe congenital heart defects – <strong>HLHS (hypoplastic left heart syndrome)</strong>, which in
+                severe congenital heart defects – <strong class="txt--strong">HLHS (hypoplastic left heart syndrome)</strong>,
+                which in
                 simple
                 words means that
-                fate gave her only <strong>half a heart</strong>.</p>
-            <p>Nina's life depends on at least <strong>3 extremely complex and risky surgeries. </strong>Unfortunately,
+                fate gave her only <strong class="txt--strong">half a heart</strong>.</p>
+            <p>Nina's life depends on at least <strong class="txt--strong">3 extremely complex and risky surgeries.
+                </strong>Unfortunately,
                 despite that our
                 daughter’s heart will never be healthy. One ventricle will have to last her for life awaiting new
                 medical solutions. Nina has already undergone 2 serious open-heart surgeries that has brought her to
                 death's door on a few occasions.</p>
-            <p>She needs one more surgery, which we would like to be carried out in <strong>Germany at the University
+            <p>She needs one more surgery, which we would like to be carried out in <strong class="txt--strong">Germany
+                    at the University
                     Hospital
                     in Münster (UKM)</strong>, where outstanding results in children with single vetricle hearts are
                 achieved. We've
-                already got reffered to the medical treatment in the UKM. The cost of surgery and care is <strong>37
+                already got reffered to the medical treatment in the UKM. The cost of surgery and care is <strong class="txt--strong">37
                     000
                     Euro.
                     We have already gathered around 1/3 of this amount.</strong> You can help us achieve this goal by
@@ -96,7 +100,7 @@
                 Dziecka).</p>
         </div>
     </section>
-    <section data-section="payment--link" id="payment" class="payment__section">
+    <section id="payment" class="payment txt--strong">
         <p>Donations to Nina can be made by wire transfer to:</p>
         <p>Fundacja Serce Dziecka im. Diny Radziwiłłowej ul. Narbutta 27 lok.1, 02-536 Warszawa</p>
         <p>Account number for payments in Euro:<br> PL 09 1160 2202 0000 0001 2152 1272<br> SWIFT BIGBPLPW</p>
@@ -108,7 +112,7 @@
             Nina’s account at the Foundation, you are assured that all funds are directed only to cover
             verified medical costs.</p>
     </section>
-    <section data-section="our_story--link" id='our_story' class="story__section">
+    <section id='our_story' class="story">
         <div class="story__gallery">
             <img src="assets/img/Nina-Samsonowicz-01.jpg" alt="Newborn Nina on mother's hands">
             <img src="assets/img/Nina-Samsonowicz-02.jpg" alt="Sleeping Nina in a hospital">
@@ -120,7 +124,8 @@
         </div>
         <div class="story__txt">
             <h3>Get to know our story</h3>
-            <p><strong>We discovered that our baby is going to have a heart defect during the pregnancy.</strong> On
+            <p><strong class="txt--strong">We discovered that our baby is going to have a heart defect during the
+                    pregnancy.</strong> On
                 February 22, 2016
                 during the pregnancy ultrasound we heard that our child’s heart was not working properly. 4 days later
                 we did a prenatal echocardiogram. We heard the words all parents are extremely afraid of: Your child is
@@ -136,7 +141,8 @@
                 her in the Children's University Hospital in Prokocim. We did not realize that on and off we would
                 spend in Cracow a total of six months.</p>
             <img src="assets/img/Nina-Samsonowicz-01.jpg" alt="Newborn Nina on mother's hands">
-            <p><strong>Nina was born on time in spite of predictions that her delivery would be premature.</strong> But
+            <p><strong class="txt--strong">Nina was born on time in spite of predictions that her delivery would be
+                    premature.</strong> But
                 she
                 was a tiny child – weighing only 2.5kg (5.5lb). Immediately after birth, instead in her mother’s arms
                 she was put in a hospital cot which became her home for the first three months of her life. She had her
@@ -150,7 +156,8 @@
                 the ordeal our daughter had to go through, her condition on discharge from hospital was good. Over the
                 next weeks we could enjoy a nearly normal life at home. </p>
             <img src="assets/img/Nina-Samsonowicz-02.jpg" alt="Sleeping Nina in a hospital">
-            <p><strong>Nina’s second operation took place as planned on January 17, 2017.</strong> Unfortunately, also
+            <p><strong class="txt--strong">Nina’s second operation took place as planned on January 17, 2017.</strong>
+                Unfortunately, also
                 this
                 time our daughter had to fight a tough battle for her life. On the second day after the surgery Nina
                 had to undergo urgent cardiac catheterization due to a threatening blood clot, which deposited itself
@@ -161,14 +168,16 @@
                 that lasted for days, residue in the stomach, and eventually a rotavirus infection, until she was
                 finally able to go home a month later.</p>
             <img src="assets/img/Nina-Samsonowicz-03.jpg" alt="Nina lying in a hospital bed">
-            <p><strong>It was a very difficult time, although we experienced it differently than after the first
+            <p><strong class="txt--strong">It was a very difficult time, although we experienced it differently than
+                    after the first
                     operation.</strong>
                 We already got to know Nina and watching her in serious condition, swollen and feverish, was difficult
                 to bear. We were worried about her further development. The tiny Nina at 7 months old weighed only 5 kg
                 and was exhausted by the hospital stay. Fortunately, she quickly recovered and we timidly started to
                 open up to normal life that we knew from before the diagnosis.</p>
             <img src="assets/img/Nina-Samsonowicz-04.jpg" alt="Nina reaches for a Christmas tree decoration">
-            <p><strong>Despite her difficult taking off, Nina managed to catch up with her healthy peers.</strong> At
+            <p><strong class="txt--strong">Despite her difficult taking off, Nina managed to catch up with her healthy
+                    peers.</strong> At
                 first
                 glance, compared to other children of her age she is “only” extremely underweight. At the age of almost
                 2.5 years she weighs a little more than 9kg (19.8lbs). Initially we were afraid whether she’d be able
@@ -179,7 +188,8 @@
                 chest, hospital visits and medications that Nina takes several times a day, but also the fear for her
                 life which is with us all the time.</p>
             <img src="assets/img/Nina-Samsonowicz-05.jpg" alt="Nina in the garden with a flower in her hand">
-            <p><strong>Nina is still waiting for another planned operation – the Fontan surgery.</strong> It will not
+            <p><strong class="txt--strong">Nina is still waiting for another planned operation – the Fontan surgery.</strong>
+                It will not
                 fix
                 her heart, but will allow her to continue to live and grow. We are closely observing the development of
                 technology that could allow to stop the progression of Nina’s condition caused by different from
@@ -202,7 +212,8 @@
                 not be able to have her mom and dad at her side. Proffesor Malec has already agreed to perform Nina's
                 surgery and we got officially accepted by the UKM to start the treatment.</p>
             <img src="assets/img/Nina-Samsonowicz-06.jpg" alt="Nina stands in the river">
-            <p><strong>The expected costs of the cardiac catheterization, the Fontan surgery and hospital stay amount
+            <p><strong class="txt--strong">The expected costs of the cardiac catheterization, the Fontan surgery and
+                    hospital stay amount
                     to
                     37 000 Euro.</strong> In case of any complications or other unforeseen illnesses, this budget will
                 be
@@ -210,15 +221,15 @@
                 that. We have already gathered around 1/3 of this amount thanks to your help. We hope that with your
                 further support we will be able to finance our hospital stay in Münster.</p>
             <img src="assets/img/Nina-Samsonowicz-07.jpg" alt="Nina with parents">
-            <p><strong>We would like to thank for the continued support and the help so far.</strong></p>
+            <p><strong class="txt--strong">We would like to thank for the continued support and the help so far.</strong></p>
             <img src="assets/heart-medium.png" alt="">
             <p>Karolina and Andrzej Samsonowicz</p>
             <p>Nina’s Parents</p>
         </div>
     </section>
-    <footer class="copyright__section">&copy; 2018 Friends4Nina</footer>
+    <footer class="copyright">&copy; 2018 Friends4Nina</footer>
     <script src="lib/jquery-3.3.1.min.js"></script>
-    <script src="scripts/scriptJQ-main.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>

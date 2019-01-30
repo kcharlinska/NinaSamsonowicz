@@ -23,6 +23,10 @@ h3 {
     margin-bottom: 50px;
 }
 
+p {
+    margin: 25px 0;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -36,6 +40,11 @@ a {
 .txt--strong {
     font-weight: $font-weight-bold;
     font-style: italic;
+
+    p {
+        margin: 10px 0;
+
+    }
 
     strong {
         text-decoration: underline;
