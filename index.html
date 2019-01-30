@@ -8,10 +8,10 @@
     <title>Nina Samsonowicz</title>
 
     <!-- Languages -->
-    <link rel="alternate" hreflang="pl" href="index.html" />
-    <link rel="alternate" hreflang="en" href="en.html" />
-    <link rel="alternate" hreflang="de" href="de.html" />
-    <link rel="alternate" hreflang="it" href="it.html" />
+    <link rel="alternate" hreflang="pl" href="https://ninasamsonowicz.pl" />
+    <link rel="alternate" hreflang="en" href="https://ninasamsonowicz.pl/en.html" />
+    <link rel="alternate" hreflang="de" href="https://ninasamsonowicz.pl/de.html" />
+    <link rel="alternate" hreflang="it" href="https://ninasamsonowicz.pl/it.html" />
 
     <!-- Fonts and Icons -->
     <link href="https://fonts.googleapis.com/css?family=Clicker+Script|Ubuntu:300,300i,400,400i,700,700i&amp;subset=latin-ext"
@@ -20,7 +20,7 @@
         crossorigin="anonymous">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/normalize.css">
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Favicon -->
@@ -59,10 +59,10 @@
             </ul>
             <div class="menu__logo">
                 <a class='homepage--link' href="#">Nina Samsonowicz</a>
-                <div class="menu__burger">
-                    <i class="menu__burger--bars fas fa-bars switch show"></i>
-                    <i class="menu__burger--angle fas fa-angle-up switch"></i>
-                </div>
+                <button class="menu__burger">
+                    <i class="fas fa-bars switch show"></i>
+                    <i class="fas fa-angle-up switch"></i>
+                </button>
             </div>
             <ul class="menu__items switch">
                 <li><a class='our_story--link' href="#">Nasza historia</a></li>
@@ -87,42 +87,47 @@
             </ul>
         </nav>
     </header>
-    <section data-section='homepage--link' class="hero__section">
+    <section data-section='homepage--link' class="hero">
     </section>
-    <section class="arrow__section">
+    <section class="arrow">
         <button class='about_Nina--link'><i class="fas fa-angle-down"></i>
         </button>
     </section>
-    <section data-section='about_Nina--link' id='about_Nina' class="main-content__section">
+    <section data-section='about_Nina--link' id='about_Nina' class="main-content">
         <div class="main-content__aside">
             <img src="assets/heart-big.png" alt="">
         </div>
         <div class="main-content__txt">
-            <p>Nasza córeczka <strong>Nina Samsonowicz</strong> urodziła się 12 lipca 2016 roku w Krakowie z jedną z
+            <p>Nasza córeczka <strong class="txt--strong">Nina Samsonowicz</strong> urodziła się 12 lipca 2016 roku w
+                Krakowie z jedną z
                 najcięższych
-                wrodzonych wad serca – <strong>HLHS (zespół niedorozwoju lewego serca)</strong>, co w uproszczeniu
+                wrodzonych wad serca – <strong class="txt--strong">HLHS (zespół niedorozwoju lewego serca)</strong>, co
+                w uproszczeniu
                 oznacza, że los
-                obdarzył ją tylko <strong>połową serduszka</strong>.</p>
-            <p>Życie Niny uzależnione jest od przeprowadzenia przynajmniej <strong>3 niezwykle skomplikowanych i
+                obdarzył ją tylko <strong class="txt--strong">połową serduszka</strong>.</p>
+            <p>Życie Niny uzależnione jest od przeprowadzenia przynajmniej <strong class="txt--strong">3 niezwykle
+                    skomplikowanych i
                     ryzykownych
                     operacji</strong>. Niestety mimo tego serce naszej córki nigdy nie będzie zdrowe. Jedna komora
                 będzie
                 musiała
                 wystarczyć jej na całe życie w oczekiwaniu na nowe rozwiązania medyczne. Ninka przeszła już 2 ciężkie
                 operacje na otwartym sercu, nie raz ocierając się o śmierć.</p>
-            <p>Potrzebuje jeszcze jednej, którą chcielibyśmy przeprowadzić <strong>w niemieckiej Klinice
+            <p>Potrzebuje jeszcze jednej, którą chcielibyśmy przeprowadzić <strong class="txt--strong">w niemieckiej
+                    Klinice
                     Uniwersyteckiej
                     w
                     Münster</strong>, gdzie osiąga się rewelacyjne wyniki leczenia dzieci z pojedynczą komorą serca.
                 Otrzymaliśmy
-                już kwalifikację do operacji w Niemczech. Szacowany koszt leczenia to <strong>37.000 Euro</strong>.
+                już kwalifikację do operacji w Niemczech. Szacowany koszt leczenia to <strong class="txt--strong">37.000
+                    Euro</strong>.
                 Udało
                 nam się do tej
                 pory zebrać około 1/3 tej kwoty. Możecie wesprzeć nas w osiągnięciu celu, przekazując darowiznę na
                 konto Niny w Fundacji Serce Dziecka.</p>
         </div>
     </section>
-    <section data-section="payment--link" id="payment" class="payment__section">
+    <section data-section="payment--link" id="payment" class="payment txt--strong">
         <p>Darowizny na rzecz Niny można dokonać za pomocą przelewu na:</p>
         <p>Fundacja Serce Dziecka im. Diny Radziwiłłowej ul. Narbutta 27 lok.1, 02-536 Warszawa</p>
         <p>Nr konta na wpłaty złotowe:<br> PL 17 1160 2202 0000 0000 8297 2843</p>
@@ -136,7 +141,7 @@
         <p>Pamiętajcie, że dokonując wpłaty na konto Niny w Fundacji, macie pewność, że wszystkie środki zostaną
             przeznaczone jedynie na rzecz zweryfikowanych kosztów medycznych.</p>
     </section>
-    <section data-section="our_story--link" id='our_story' class="story__section">
+    <section data-section="our_story--link" id='our_story' class="story">
         <div class="story__gallery">
             <img src="assets/img/Nina-Samsonowicz-01.jpg" alt="Nina po urodzeniu na rękach mamy">
             <img src="assets/img/Nina-Samsonowicz-02.jpg" alt="Śpiąca Nina w szpitalu">
@@ -148,7 +153,8 @@
         </div>
         <div class="story__txt">
             <h3>Poznajcie bliżej naszą historię</h3>
-            <p><strong>O wadzie dowiedzieliśmy się jeszcze w ciąży.</strong> 22 lutego 2016 w trakcie USG
+            <p><strong class="txt--strong">O wadzie dowiedzieliśmy się jeszcze w ciąży.</strong> 22 lutego 2016 w
+                trakcie USG
                 ginekologicznego
                 usłyszeliśmy,
                 że serce naszego dziecka nie pracuje prawidłowo. 4 dni później trafiliśmy na badanie echo serca.
@@ -168,7 +174,8 @@
                 w Uniwersyteckim Szpitalu Dziecięcym w Prokocimiu. Jeszcze nie zdawaliśmy sobie sprawy, że w Krakowie z
                 przerwami spędzimy w sumie pół roku.</p>
             <img src="assets/img/Nina-Samsonowicz-01.jpg" alt="Nina po urodzeniu na rękach mamy">
-            <p><strong>Nina urodziła się o czasie na przekór przewidywaniom, że ciąży nie uda się donosić.</strong>
+            <p><strong class="txt--strong">Nina urodziła się o czasie na przekór przewidywaniom, że ciąży nie uda się
+                    donosić.</strong>
                 Była
                 jednak drobnym
                 dzieckiem – ważyła zaledwie 2,5 kg. Zaraz po urodzeniu zamiast w ramiona mamy trafiła do szpitalnego
@@ -189,7 +196,8 @@
                 stan przy wypisie ze szpitala był dobry. Przez kolejne tygodnie mogliśmy cieszyć się prawie normalnym
                 życiem w domu.</p>
             <img src="assets/img/Nina-Samsonowicz-02.jpg" alt="Śpiąca Nina w szpitalu">
-            <p><strong>Druga operacja Niny odbyła się planowo 17 stycznia 2017 roku.</strong> Niestety i tym razem
+            <p><strong class="txt--strong">Druga operacja Niny odbyła się planowo 17 stycznia 2017 roku.</strong>
+                Niestety i tym razem
                 córka
                 stoczyła ciężką
                 walkę o życie. W drugiej dobie po zabiegu Ninka musiała przejść pilne cewnikowanie serca ze względu na
@@ -201,7 +209,8 @@
                 zwiotczających), bolesnymi odparzeniami po plastrach, wielodniową gorączką, zaleganiami w żołądku, aż w
                 końcu infekcją rotawirusową, by mogła wrócić do domu miesiąc później.</p>
             <img src="assets/img/Nina-Samsonowicz-03.jpg" alt="Nina leżąca w szpitalnym łóżku">
-            <p><strong>Był to bardzo trudny czas, choć przeżywaliśmy go inaczej niż po pierwszej operacji.</strong>
+            <p><strong class="txt--strong">Był to bardzo trudny czas, choć przeżywaliśmy go inaczej niż po pierwszej
+                    operacji.</strong>
                 Zdążyliśmy już
                 poznać
                 Ninę i oglądanie jej w ciężkim stanie, opuchniętej, gorączkującej było dla nas trudne do zniesienia.
@@ -209,7 +218,8 @@
                 wycieńczona pobytem w szpitalu. Nina na szczęście szybko wróciła do dobrej kondycji, a my nieśmiało
                 zaczęliśmy otwierać się na normalne życie, które znaliśmy jeszcze sprzed diagnozy.</p>
             <img src="assets/img/Nina-Samsonowicz-04.jpg" alt="Nina na rękach sięga po bombkę choinkową">
-            <p><strong>Ninka mimo bardzo ciężkiego startu zdołała dogonić zdrowych rówieśników.</strong> Na pierwszy
+            <p><strong class="txt--strong">Ninka mimo bardzo ciężkiego startu zdołała dogonić zdrowych rówieśników.</strong>
+                Na pierwszy
                 rzut
                 oka od dzieci
                 w
@@ -224,7 +234,8 @@
                 leki, które Nina przyjmuje kilka razy dziennie, ale też strach o jej życie, który towarzyszy nam
                 nieustannie.</p>
             <img src="assets/img/Nina-Samsonowicz-05.jpg" alt="Nina w ogrodzie z kwiatem w ręku">
-            <p><strong>Ninę czeka wciąż jedna planowa operacja – operacja Fontana.</strong> Nie naprawi ona w pełni jej
+            <p><strong class="txt--strong">Ninę czeka wciąż jedna planowa operacja – operacja Fontana.</strong> Nie
+                naprawi ona w pełni jej
                 serca, ale
                 pozwoli jej dalej żyć i rozwijać się. My bacznie obserwujemy rozwój technologii, które
                 pozwoliłyby
@@ -257,7 +268,7 @@
                 długiego pobytu w szpitalu i ciężkiego przebiegu pooperacyjnego, trudno nam wyobrazić sobie, że po tak
                 skomplikowanej operacji Ninka nie będzie mogła mieć przy sobie cały czas mamy i taty.</p>
             <img src="assets/img/Nina-Samsonowicz-06.jpg" alt="Nina stoi w strumieniu">
-            <p><strong>Profesor Malec
+            <p><strong class="txt--strong">Profesor Malec
                     zgodził się zoperować Ninę, otrzymaliśmy oficjalną kwalifikację.</strong> Przewidywane koszty
                 planowanej operacji, poprzedzającego ją cewnikowania serca oraz pobytu w szpitalu to 37.000 Euro. Kwota
                 ta może wzrosnąć w przypadku nieprzewidzianych wydarzeń. Więc w rzeczywistości
@@ -267,7 +278,7 @@
                 pomocy i wpływom z 1% podatku. Liczymy, że z Waszym dalszym wsparciem uda się sfinansować nasz pobyt w
                 szpitalu w Munster.</p>
             <img src="assets/img/Nina-Samsonowicz-07.jpg" alt="Nina z rodzicami u taty na barana">
-            <p><strong>Za wszelką dotychczasową pomoc oraz dalsze wsparcie serdecznie dziękujemy.</strong></p>
+            <p><strong class="txt--strong">Za wszelką dotychczasową pomoc oraz dalsze wsparcie serdecznie dziękujemy.</strong></p>
             <img src="assets/heart-medium.png" alt="">
             <p>Karolina i Andrzej Samsonowicz</p>
             <p>Rodzice Niny</p>
