@@ -5,6 +5,7 @@
     font-size: 2rem;
     color: $brand-color;
     border: none;
+    background-color: $white-color;
     cursor: pointer;
 
     @include md-media {
