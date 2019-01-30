@@ -1,0 +1,43 @@
+body {
+    font: $font-weight-light #{$font-size-regular}/#{$main-line-height} $font-family-main;
+    color: $text-color-gray;
+}
+
+h2,
+h3 {
+    color: $brand-color;
+}
+
+h2 {
+    font-weight: $font-weight-regular;
+    padding: 20px 0;
+
+    @include sm-media {
+        font-size: 1.1rem;
+    }
+
+}
+
+h3 {
+    font: $font-weight-bold 2.5rem $font-family-brand;
+    margin-bottom: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu__logo {
+    font: $font-weight-bold 3.5rem $font-family-brand;
+    color: $brand-color;
+}
+
+.txt--strong {
+    font-weight: $font-weight-bold;
+    font-style: italic;
+
+    strong {
+        text-decoration: underline;
+    }
+}

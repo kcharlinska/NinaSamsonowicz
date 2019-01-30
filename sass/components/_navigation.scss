@@ -1,0 +1,179 @@
+// Navbar
+
+.menu {
+    display: flex;
+    min-height: 15vh;
+
+    a {
+        @include flexCenter;
+        height: 100%;
+        width: 100%;
+        transform: scale(1);
+        text-align: center;
+        @include transition;
+    }
+
+    @include md-media {
+        flex-wrap: wrap;
+    }
+
+    &__logo {
+        display: flex;
+        flex-basis: 40%;
+        text-align: center;
+
+        @include xl-media {
+            font-size: 5rem;
+        }
+
+        @include md-media {
+            order: -1;
+            width: 100vw;
+            min-height: 15vh;
+            font-size: 5rem;
+
+            a {
+                width: 85vw;
+                padding: 1%;
+            }
+        }
+
+        @include sm-media {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+.menu__items {
+    display: flex;
+    flex-basis: 30%;
+    font-size: .9rem;
+
+    @include xl-media {
+        font-size: 1.1rem;
+    }
+
+    @include md-media {
+        display: none;
+        background-color: $brand-color;
+        width: 100vw;
+
+        &.show {
+            display: block;
+        }
+    }
+
+    li {
+        list-style: none;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        padding: 10px 20px;
+
+        @include md-media {
+            text-align: center;
+            border-bottom: 1px solid $white-color;
+            width: 100vw;
+            padding: 0;
+            @include transition;
+
+            &:not(.menu__lang-menu):hover {
+                background-color: $gray-color;
+            }
+        }
+
+
+        a {
+
+            @include md-media {
+                width: 100%;
+                padding: 20px 0;
+            }
+
+            &.active {
+                transform: scale(.9);
+                color: $brand-color;
+            }
+
+            &:hover {
+                transform: scale(.9);
+                color: $brand-color;
+
+                @include md-media {
+                    transform: scale(.9);
+                    color: $text-color-gray;
+                }
+            }
+        }
+    }
+
+    &:first-of-type li {
+        flex-basis: 50%;
+    }
+
+    &:last-of-type li {
+        flex-basis: 40%;
+    }
+}
+
+.menu__lang-menu {
+    position: relative;
+
+    &:hover .lang__select--desk {
+        visibility: visible;
+        opacity: 1;
+
+        @include md-media {
+            display: none;
+        }
+    }
+
+    a {
+
+        @include md-media {
+            display: none;
+        }
+
+        i {
+            padding-left: 5px;
+        }
+    }
+}
+
+.lang__select--desk {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .3s, opacity 0.5s linear;
+    @include position(absolute, $bottom: 0, $right: 0);
+    @include translate(-8%, 60%);
+    background-color: $white-color;
+    text-align: center;
+    border: 1px solid $gray-color;
+    z-index: 1;
+
+    &:before {
+        content: "";
+        width: 0px;
+        height: 0px;
+        @include position(absolute, $top: -10px, $right: 20%);
+        @include borderSpBubble($gray-color);
+    }
+
+    &:after {
+        content: "";
+        width: 0px;
+        height: 0px;
+        @include position(absolute, $top: -8px, $right: 20%);
+        @include borderSpBubble ($white-color);
+    }
+}
+
+.lang__select--mobi {
+    display: none;
+    margin: 0 auto;
+    text-transform: uppercase;
+
+    @include md-media {
+        display: block;
+        margin: 20px auto;
+    }
+}

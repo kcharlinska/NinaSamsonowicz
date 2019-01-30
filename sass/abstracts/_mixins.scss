@@ -1,0 +1,92 @@
+// Flexbox center horizontal and vertical
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// Positioning element
+@mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+// Repositioning element horizontal and vertical
+@mixin translate($x, $y) {
+    transform: translate($x, $y)
+}
+
+// Repositioning element vertical and resize
+@mixin transYscale($y, $s) {
+    transform: translateY($y) scale($s);
+}
+
+// Transition element on hover
+@mixin transition {
+    transition: .3s linear;
+}
+
+// Creating circle
+@mixin circle {
+    border-radius: 50%;
+    width: $circle-diameter;
+    height: $circle-diameter;
+    text-align: center;
+    background-color: $circle-bgc;
+}
+
+// Creating speech bubble (for language choice)
+@mixin borderSpBubble($border-color) {
+    border-left: $border-width solid transparent;
+    border-right: $border-width solid transparent;
+    border-top: $border-width solid transparent;
+    border-bottom: $border-width solid $border-color;
+}
+
+// Adjust right column size
+@mixin colAdj-r {
+    flex-basis: $width-r;
+    margin-right: 8%;
+}
+
+// Adjust left column size
+@mixin colAdj-l {
+    flex-basis: $width-l;
+}
+
+// TODO: size100%
+
+
+
+// ----- MEDIA QUERIES -----
+
+// Small devices
+@mixin sm-media {
+    @media (max-width: #{$screen-sm-max}) {
+        @content;
+    }
+}
+
+// Medium devices
+@mixin md-media {
+    @media (max-width: #{$screen-md-max}) {
+        @content;
+    }
+}
+
+// Large devices
+// @mixin lg-media {
+//     @media (min-width: #{$screen-lg-min}) {
+//         @content;
+//     }
+// }
+
+// Extra large devices
+@mixin xl-media {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+}

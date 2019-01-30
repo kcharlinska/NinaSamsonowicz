@@ -1,0 +1,46 @@
+button {
+    color: $brand-color;
+    border: none;
+    cursor: pointer;
+}
+
+// Hamburger button
+
+.menu__burger {
+    display: none;
+    font-size: 2rem;
+
+    @include md-media {
+        @include flexCenter;
+        width: 15vw;
+
+        i {
+            display: none;
+
+            &.show {
+                display: block;
+            }
+        }
+    }
+}
+
+// Arrow button
+
+.arrow .about_Nina--link {
+    @include position(absolute, $top: 50%, $left: 50%);
+    @include translate(-50%, -50%);
+    font-size: 3rem;
+    background-color: $white-color;
+
+    i {
+        @include transYscale(0, 1);
+        text-shadow: 0 -20px $brand-color;
+        @include transition;
+    }
+
+    &:hover i {
+        @include transYscale(5px, .9);
+        color: $gray-color;
+        text-shadow: 0 -20px $gray-color;
+    }
+}

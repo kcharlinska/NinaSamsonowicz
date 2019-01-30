@@ -1,0 +1,28 @@
+// MOVIES
+
+.movie__section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20vh 5%;
+
+    @include sm-media {
+        margin: 15vh 0;
+    }
+
+    .movie__item {
+        margin: 20px;
+
+        @include sm-media {
+            width: 100%;
+        }
+
+        iframe {
+            @include sm-media {
+                width: 100%;
+                height: 100%;
+                margin: 0 auto;
+            }
+        }
+    }
+}

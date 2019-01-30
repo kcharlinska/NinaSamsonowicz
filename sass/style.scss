@@ -12,12 +12,10 @@
 'base/typography';
 
 // 4. Layout-related sections
-@import 'layout/header',
-'layout/footer',
-'layout/hero';
+@import 'layout/layout';
 
 // 5. Components
-@import 'components/buttons';
+@import 'components/buttons', 'components/navigation';
 
 // 6. Page-specific styles
 @import 'pages/about-hlhs';

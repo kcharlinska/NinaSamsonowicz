@@ -1,0 +1,65 @@
+// ----- FONTS -----
+
+// Main font family
+$font-family-main: 'Ubuntu',
+sans-serif;
+// Special font family
+$font-family-brand: 'Clicker Script',
+cursive;
+
+// Font weights
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
+// Font sizes
+$font-size-regular: 18px;
+
+
+
+// ----- COLORS -----
+
+// Regular text color
+$text-color-gray: #484848;
+// Special text color
+$text-color-special: #912F46;
+// Main brand color
+$brand-color: #D9A7A3;
+// White color
+$white-color: #fff;
+// Gray color
+$gray-color: #a7a7a7;
+
+
+
+// ----- ELEMENTS -----
+
+// Paragraph Line-height
+$main-line-height: 1.5;
+// Round element
+$circle-diameter: 180px;
+$circle-bgc: $white-color;
+// Speech Bubble border
+$border-width: 5px;
+// Section paddings
+$section-padding-desk: 5%;
+$section-padding-mobi: 20% 5%;
+// Page columns adjustment
+$width-r: 60%;
+$width-l: (100% - $width-r);
+
+
+
+// ----- BREAKPOINTS -----
+
+// Mobile phones
+$screen-sm-max: 599px;
+// Tablets and small desktops
+$screen-md-max: 1024px;
+// Large tablets and desktops
+// $screen-lg-min: 992px;
+// Large desktops
+$screen-xl-min: 1440px;
+
+// TODO: space-around
+// TODO: line-height height
